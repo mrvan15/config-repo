@@ -9,7 +9,7 @@
 #spring.mvc.view.prefix=/templates/
 #spring.mvc.view.suffix=.html
 example:
-  property: "I AM IN THE DEFAULT"
+  property: I AM IN THE DEFAULT
 spring:
   datasource:
     river-class-name: com.mysql.cj.jdbc.Driver
