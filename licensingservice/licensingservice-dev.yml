@@ -10,6 +10,6 @@ spring:
     database: mysql
     show-sql: true
     hibernate:
-       ddl-auto: apdate
+       ddl-auto: update
        dialect: org.hibernate.dialect.MySQL5Dialect
        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
