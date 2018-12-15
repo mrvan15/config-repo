@@ -2,7 +2,7 @@ example:
   property: I AM IN THE DEFAULT
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/my-oa?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
     username: root
     password: {cipher}7140f25f4d3214590316f05d808a18f220b4ab7d72aebd37a8d384207d8575bb
