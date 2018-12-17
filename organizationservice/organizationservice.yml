@@ -22,5 +22,8 @@ eureka:
    client:
      register-with-eureka: true
      fetch-registry: true
+     region: js
+     availability-zones:
+        js: nj1
      service-url:
-       defaultZone: http://localhost:8761/eureka/
+        nj1: http://localhost:8761/eureka/
