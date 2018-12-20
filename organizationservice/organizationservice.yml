@@ -17,10 +17,10 @@ spring:
        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 eureka:
    instance:
-     prefer-ip-address: true
      instance-id: organizationservice
+     prefer-ip-address: true
    client:
      register-with-eureka: true
      fetch-registry: true
-     service-url:
+     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
