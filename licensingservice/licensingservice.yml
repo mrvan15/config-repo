@@ -15,6 +15,7 @@ spring:
        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 eureka:
   instance:
+    instance-id: licensingservice
     prefer-ip-address: true
   client:
     register-with-eureka: true
