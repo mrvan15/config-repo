@@ -1,5 +1,5 @@
 server:
-  port: 9527
+  port: 5555
 eureka:
   instance:
     prefer-ip-address: true
@@ -9,3 +9,12 @@ eureka:
     fetch-registry: true
     serviceUrl:
        defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+      organizationservice: /organization/**
+      licensingservice: /licensing/**
+  ignored-services: '*'
+  prefix: /api
+spring:
+  application:
+    name: zuulservice
