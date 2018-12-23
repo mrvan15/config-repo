@@ -18,3 +18,12 @@ zuul:
 spring:
   application:
     name: zuulservice
+hystrix:
+  commond:
+    default:
+      execution:
+        isolation:
+          tread:
+            timeoutInMilliseconds: 5000
+ribbon:
+  ReadTimeout: 5000
