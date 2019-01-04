@@ -1,0 +1,26 @@
+example:
+  property: AAA
+server: 
+  port: 8002
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: "{cipher}7140f25f4d3214590316f05d808a18f220b4ab7d72aebd37a8d384207d8575bb"
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+       ddl-auto: update
+       dialect: org.hibernate.dialect.MySQL5Dialect
+       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+eureka:
+   instance:
+     instance-id: orgservicenew
+     prefer-ip-address: true
+   client:
+     register-with-eureka: true
+     fetch-registry: true
+     serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
