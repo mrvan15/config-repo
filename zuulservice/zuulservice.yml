@@ -10,6 +10,7 @@ eureka:
     serviceUrl:
        defaultZone: http://localhost:8761/eureka/
 zuul:
+  sensitive-headers: Cookie,Set-Cookie
   routes:
     organizationservice: /organization/**
     licensingservice: /licensing/**
